@@ -1,0 +1,99 @@
+*{
+ box-sizing: border-box;
+}
+body { 
+  margin: 0;
+}
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 7px 7px;
+}
+.header a {
+  float: left;
+  color: silver;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 5px;
+}
+.header a.header-left {
+  font-size: 30px;
+  font-weight: bold;
+}
+.header a.uname{
+  color:#88b4eb;
+  font-weight:bold;
+}
+.header a.active {
+  background-color: dodgerblue;
+  color: #32154b;
+}
+.header-right {
+  float: right;
+}
+/*making responsive*/
+@media screen and (max-width: 500px) {
+   
+  .header-right {
+    float: none;
+  }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.header .logout{
+  float:right;
+  color:violet;
+}
+.divider1{
+   height:3px;
+   background-color:#a6a6a6;
+}
+body{
+  background-image:url('img/background1.jpg');
+  background-repeat:no-repeat;
+  background-position:fixed;
+  background-size:cover;
+}
+.list{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+.list .listitem{
+  padding:130px 70px 0 0;
+  text-align:center;
+}
+.listitem .icon{
+  background-color:white;
+  border-radius:100%;
+}
+.icon img{
+  padding:7px;
+  width:200px;
+  height:200px;
+  border-radius:100%;
+}
+.listitem a{
+  text-decoration:none;
+  color:black;
+  font-size:30px;
+  font-weight:bold;
+  background-color:white;
+  border-radius:10%;
+  padding:10px;
+}
+.listitem a:hover{
+  box-shadow:3px 3px 3px 3px white;
+  transition:0.2s;
+  -webkit-transition:0.2s;
+}
+.listitem span{
+  font-size:30px;
+}
