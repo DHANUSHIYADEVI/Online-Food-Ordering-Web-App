@@ -3,7 +3,7 @@
 
 This project is the simple online food ordering website project.
 
-#Technologies used
+# Technologies-Used
 
 
    front end: html and css
